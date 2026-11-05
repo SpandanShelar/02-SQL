@@ -1,0 +1,33 @@
+CREATE DATABASE Shield;
+USE shield;
+CREATE TABLE Avengers(
+    Ar_Id INT,
+    F_name VARCHAR(50),
+    L_name VARCHAR(50),
+    heroic_Name varchar(50),
+    city varchar(50));
+
+SHOW TABLES;
+DESC Avengers;
+SELECT * from Avengers;
+INSERT INTO Avengers(ar_id,F_name,L_name,Heroic_name,city)
+VALUES(1,'STEVE','ROGERS','CAPTAIN AMERICA','NYC'),
+(2,'TONY','STARK','IRON MAN','NYC'),
+(3,'THOR','ODINSON','THOR','NYC'),
+(4,'PETER','PARKER','SPIDER-MAN','NYC'),
+(5,'SCOTT','LANG','ANT-MAN','CALIFORNIA'),
+(6,'STEPHEN','STRANGE','DR.STRANGE','FLORIDA'),
+(7,'JAMES','BANER','WINTER SOLIDER','CALRIFORNIA');
+
+
+INSERT INTO AVENGERS(AR_ID,HEROIC_NAME,CITY,F_NAME,L_NAME)
+VALUES (8,'BLACK WIDOW','RUSSIA','NATASHA','ROMANOFF');
+
+insert into avengers(f_name,l_name,ar_id)
+value('clint','barten',9);
+
+INSERT INTO AVENGERS
+VALUES(10,'BRUCE','BANNER','HULK','ARIZONA');
+
+insert into AVENGERS(F_NAME,l_NAME,HEROIC_NAME,CITY,AR_ID)
+VALUES ("WANDA'S","MAXIMOFF'S","SCARLET WITCH","NYC",11);
